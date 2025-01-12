@@ -22,9 +22,10 @@ int main()
         fgets(a[i].name,100,stdin);
         printf("\n enter roll number of student %d:",i+1);
         scanf("%d",&a[i].roll);
-        printf("\n enter marks f student %d:",i+1);
+        printf("\n enter marks of student %d:",i+1);
         scanf("%f",&a[i].marks);
     }
+    printf("\n***********************\n**********************\n");
     for(int i=0;i<n;i++)
     {
         printf("\nname of student %d:%s",i+1,a[i].name);
