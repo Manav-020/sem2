@@ -10,7 +10,12 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
+    printf("array is\n");
     int inv=0;
+    for(int i=0;i<n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
     for(int i=0;i<n;i++)
     {
         for(int j=i;j<n;j++)
