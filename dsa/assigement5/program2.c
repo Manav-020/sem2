@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define n 5
+#define n 100
 class stack{
     public:
         int top=-1;
