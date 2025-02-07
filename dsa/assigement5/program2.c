@@ -1,4 +1,3 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 #define n 5
@@ -10,11 +9,6 @@ class stack{
 class stack s1;
 void push(int x)
 {
-    // if(top==-1)
-    // {
-    //     s1.top++;
-    //     s1.arr[s1.top]=x;
-    // }
     if(s1.top==n-1)
     {
         cout<<"stack overflow";
@@ -33,7 +27,7 @@ void pop()
     }
     else
     {
-        cout<<"element"<<s1.arr[s1.top]<<"removed from stack";
+        cout<<"element "<<s1.arr[s1.top]<<" removed from stack";
         s1.top--;
     }
 }
@@ -46,6 +40,15 @@ void isFull()
     if(s1.top==n-1)
     {
         cout<<"stack is full";
+    }
+}
+void display()
+{
+    int i=0;
+    while (i<=s1.top)
+    {
+        cout<<s1.arr[i]<<"\t";
+        i++;
     }
 }
 void isEmpty()
@@ -65,4 +68,7 @@ int main()
         cin>> x;
         push(x);
     }
+    pop();
+    isFull();
+    display();
 }
